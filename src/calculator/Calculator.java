@@ -1,4 +1,4 @@
-package calculator; // method 3
+package calculator;
 
 public class Calculator implements Calculatable{
 
