@@ -22,7 +22,6 @@ public class CalculatorDemo {
 		v = cal.avg(a);
 		System.out.println(r);
 		System.out.println(v);
-		
 	}
 
 }  
