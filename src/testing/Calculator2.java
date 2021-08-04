@@ -8,7 +8,6 @@ abstract class Calculator2 {
 			this.right = right;
 		}
 		
-		
 		public abstract void sum();
 		public abstract void avg();
 		public void run() {

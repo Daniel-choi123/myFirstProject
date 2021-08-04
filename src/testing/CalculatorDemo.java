@@ -7,4 +7,4 @@ public class CalculatorDemo {
 		calP.setOprands(10, 20);
 		calP.run();
 	}
-}
+}  
