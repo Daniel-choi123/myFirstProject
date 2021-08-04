@@ -1,4 +1,4 @@
-package testing; // method 3
+package calculator; // method 3
 
 abstract class Calculator2 {
 
