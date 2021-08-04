@@ -1,4 +1,4 @@
-package testing;
+package calculator;
 
 public class CalculatorPlus extends Calculator2 {
 	
