@@ -5,8 +5,8 @@ public class Calculator implements Calculatable{
 	    static final double PI = 3.14;
 		int left, right, third;
 		public void setOprands(int first, int second, int third) {
-			this.left = left;
-			this.right = right;
+			this.left = first;
+			this.right = second;
 			this.third = third;
 		}
 		public int plus() {
