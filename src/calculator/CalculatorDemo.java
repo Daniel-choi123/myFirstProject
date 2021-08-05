@@ -6,7 +6,7 @@ public class CalculatorDemo {
 	public static void main(String[] args) {
 		Calculator cal = new Calculator();
 		
-		cal.setOprands(10,20,60);
+		cal.setOprands(10,20,30);
 		int i = 0;
 		int g = 0;
 		i = cal.plus();
