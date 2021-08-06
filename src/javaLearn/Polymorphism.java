@@ -1,4 +1,4 @@
-package javaLearn;
+/*package javaLearn;
 class O{
 	public void a(int param) {
 		System.out.println("숫자출력");
@@ -34,4 +34,4 @@ public class Polymorphism {
 		
 	}
 
-}
+}*/

@@ -9,17 +9,17 @@ class Excep{
 	}
 	public void dividing(int first, int second) {
 		try {
-			System.out.println(first / second);
+			System.out.println(arr[first] / arr[second]);
+		}catch (ArithmeticException e) {
+			System.out.println("ArithmeticException e");
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("arrayindexoutofboundexception");
 		} catch(Exception e) {
 			System.out.println("error");
-			//e.printStackTrace();
-		} 
+		} finally {
+			System.out.println("Finally");
+		}
 		
-		/*catch (ArithmeticException e) {
-			System.out.println("ArithmeticException e");
-		} catch (ArrayIndexOutOfBoundException e) {
-			System.out.println("arrayindexoutofboundexception");
-		}*/
 		
 		
 		
@@ -30,7 +30,7 @@ public class ExceptionDemo {
 
 	public static void main(String[] args) {
 		Excep a = new Excep();
-		a.dividing(2, 1);
+		a.dividing(10, 1);
 	}
 }
 

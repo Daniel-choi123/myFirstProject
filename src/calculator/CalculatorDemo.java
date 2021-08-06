@@ -13,6 +13,7 @@ public class CalculatorDemo {
 		g = cal.aveg();
 		System.out.println(i);
 		System.out.println(g);
+		
 		System.out.println("===============");
 		
 		int[] a = {100, 200, 300, 400};
@@ -22,6 +23,15 @@ public class CalculatorDemo {
 		v = cal.avg(a);
 		System.out.println(r);
 		System.out.println(v);
+		
+		System.out.println("===============");
+		
+		cal.setOprands(10,0);
+		try {
+			cal.divide();
+		} catch(DivideException e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
 }  

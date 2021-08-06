@@ -1,5 +1,4 @@
-package calculator;
-
+ package calculator;
 public class Calculator implements Calculatable{
 
 	    static final double PI = 3.14;
@@ -9,12 +8,25 @@ public class Calculator implements Calculatable{
 			this.right = second;
 			this.third = third;
 		}
+		public void setOprands(int left, int right) {
+			this.left = left;
+			this.right = right;
+		}
 		public int plus() {
 			return this.left + this.right + this.third;
 		}
 		public int aveg() {
 			return (this.left + this.right + this.third )/ 2;
 		}
+		public void divide() throws DivideException {
+			if(right == 0) {
+				throw new DivideException("cannot divide by zero");
+			}
+			System.out.println("계산결과는");
+				System.out.println(this.left/this.right);
+				System.out.println("입니다");
+		}
+		
 		
 		
 		public int sum(int[] nums ) {
