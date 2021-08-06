@@ -1,4 +1,4 @@
-package javaLearn;
+/*package javaLearn;
 interface I{}
 
 interface I2{
@@ -32,3 +32,4 @@ public class Polymorphism2 {
 	}
 
 }
+*/
