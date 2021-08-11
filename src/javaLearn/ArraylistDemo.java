@@ -17,7 +17,7 @@ public class ArraylistDemo {
 		al.add("two");
 		al.add("three");
 		for(int i=0; i<al.size(); i++) {
-			String value = al.get(i);
+			String vallue = al.get(i);
 			System.out.println(al.get(i));
 		}
 
