@@ -99,5 +99,52 @@ public class DBconnection {
 		
 		return stuList;
 	}
+	
+	public int addStudent(Student stud) {
+		int effectedrow = 0;
+		SQL ="insert into student (name, year, classNo, gender, address) values ('"
+				+ stud.name + "'," +
+				+ stud.year +","
+				+ stud.classNo + ","
+				+ stud.gender + "," 
+				+ "'" + stud.address +"');";
+		
+		//System.out.print(SQL);
+		try {
+			effectedrow = st.executeUpdate(SQL);
+		} catch (Exception e) {
+			System.out.println("ADDING ERROR");
+		}
+		
+		return effectedrow;
+	}
+	
+	public int deleteStudent(Student stuId) {
+		int deletedrow = 0;
+		SQL = "delete from student where id = " + stuId.id;
+		
+		System.out.println(SQL);
+		
+		try {
+			deletedrow  = st.executeUpdate(SQL);
+		} catch (Exception e) {
+			System.out.println("Deleting ERROR");
+		}
+		return deletedrow;
+	}
+	public int updateStudentAddress(Student stuId) {
+		int updaterow = 0;
+		SQL = "update student set address = " + "'" + stuId.address + "'" + "where id = "
+				+ stuId.id + ";";
+		System.out.println(SQL);
+		
+		try {
+			updaterow = st.executeUpdate(SQL);
+		} catch(Exception e) {
+			System.out.println("UPDATING ERROR");
+		}
+		
+		return updaterow;
+	}
 
 }
